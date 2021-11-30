@@ -1,18 +1,17 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap");
+
 body {
   font-family: Roboto;
-  background: #8e0e00;
-  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to left, #8e0e00, #1f1c18);
-  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to left, #8e0e00, #1f1c18);
-  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: #a6341b;
+  background: -webkit-linear-gradient(to left, #a6341b, #60371e);
+  background: linear-gradient(to left, #a6341b, #60371e);
 }
 
 #container {
   height: 525px;
-  width: 360px;
+  width: 369px;
   margin: 100px auto;
-  background: #f7f7f7;
+  background: #c7c8c4;
   box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
   border-radius: 20px;
   -webkit-border-radius: 20px;
@@ -20,18 +19,22 @@ body {
 }
 
 h1 {
-  background: #1f030c;
-  color: white;
+  background: #60371e;
+  color: #f9c743;
   margin: 0;
   padding: 10px 100px;
   text-transform: uppercase;
-  font-size: 18px;
-  font-weight: normal;
+  font-size: 19px;
+  font-weight: bolder;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
 }
 
 p {
+  padding-left: 20px;
+}
+
+span {
   padding-left: 20px;
 }
 
@@ -45,11 +48,11 @@ input {
 
 #billamt {
   font-size: 14px;
-  /*color: #2980b9;*/
   color: red;
-  background-color: #f7f7f7;
+  background-color: white;
   width: 60%;
   padding: 5px 5px 8px 8px;
+  border-radius: 5px;
 }
 
 #billamt:focus {
@@ -63,18 +66,15 @@ input {
   padding: 5px 5px 8px 8px;
   margin-left: 20px;
   color: red;
-  background-color: #f7f7f7;
+  background-color: white;
+  border-radius: 5px;
   font-size: 14px;
-}
-
-.dollarSign {
-  display: inline;
 }
 
 #serviceQual {
   padding: 13px 13px 20px 20px;
   margin-left: 20px;
-  font-size: 25px;
+  font-size: 16px;
 }
 
 button {
@@ -82,17 +82,17 @@ button {
   font-weight: bold;
   display: block;
   margin: 30px auto;
-  background: #ad133a;
+  background: #a6341b;
   border-radius: 5px;
   width: 200px;
   height: 50px;
   font-size: 17px;
-  color: white;
+  color: #f9c743;
+  border: none;
 }
 
 button:hover {
   background: #4c2827;
-  border-bottom-color: #111;
 }
 
 button:active {
@@ -107,7 +107,7 @@ button:active {
 }
 
 #totalTip:before {
-  content: "Tip amount";
+  content: "You owe";
   font-size: 20px;
   font-weight: bold;
   display: block;
